@@ -4,7 +4,7 @@ import {TodoCounter} from './TodoCounter'
 import {TodoSearch} from './TodoSearch'
 import {TodoList} from './TodoList'
 import {TodoItem} from './TodoItem'
-import {TodoAdd} from './TodoAdd'
+import {CreateTodoButton} from './CreateTodoButton'
 
 const todos = [
   { text: "Limpiar escritorio", completed: false },
@@ -22,7 +22,7 @@ function App() {
           <TodoItem key={todo.text} text={todo.text} completed={todo.completed} />
         ))}
       </TodoList>
-      <TodoAdd />
+      <CreateTodoButton />
     </React.Fragment>
   );
 }

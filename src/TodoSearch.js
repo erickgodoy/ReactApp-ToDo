@@ -1,8 +1,6 @@
 import React from 'react';
 
-
 function TodoSearch({searchValue,setSearchValue}){
-    // const [searchValue,setSearchValue] = React.useState('');
 
     const onSearchValueChange = (event) => {
         console.log(event.target.value);
@@ -16,7 +14,6 @@ function TodoSearch({searchValue,setSearchValue}){
         placeholder="task Name" 
         />,
         <p>{searchValue}</p>
-       
     ]
 }
 
